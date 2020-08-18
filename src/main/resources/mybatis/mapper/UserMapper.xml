@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 映射 接口 InsertRequestLogDao -->
+<mapper namespace="bilibili.e_mybatis.mapper.UserMapper">
+    <select id="queryUserList" resultType="User" useCache="true">
+        select *
+        from bingo.user;
+    </select>
+
+    <select id="queryUserById" resultType="User">
+        select *
+        from bingo.user
+        where id = #{id};
+    </select>
+    <select id="addUser" parameterType="User">
+        insert into bingo.user
+        values (#{id}, #{username}, #{birthday}, #{sex}, #{address});
+    </select>
+    <select id="updateUser" parameterType="User">
+        update bingo.user
+        set name = #{name}
+        where id = #{id};
+    </select>
+    <select id="deleteUser" parameterType="User">
+        delete
+        from bingo.user
+        where id = #{id};
+    </select>
+</mapper>

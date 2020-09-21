@@ -5,10 +5,10 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.1.RELEASE</version>
+        <version>2.3.4.RELEASE</version>
         <relativePath/>
     </parent>
-    <groupId>bilibili</groupId>
+    <groupId>com.bilibili</groupId>
     <artifactId>spring-boot_example</artifactId>
     <version>0.0.1</version>
     <name>spring-boot_example</name>

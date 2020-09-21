@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 映射 接口 InsertRequestLogDao -->
-<mapper namespace="bilibili.e_mybatis.mapper.UserMapper">
+<mapper namespace="com.bilibili.e_mybatis.mapper.UserMapper">
     <select id="queryUserList" resultType="User" useCache="true">
         select *
         from bingo.user;

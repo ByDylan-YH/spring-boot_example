@@ -24,7 +24,7 @@ spring:
 
 # 整合mybatis
 mybatis:
-  type-aliases-package: bilibili.e_mybatis.entity
+  type-aliases-package: com.bilibili.e_mybatis.entity
   mapper-locations: classpath:mybatis/mapper/*.xml
 
 
